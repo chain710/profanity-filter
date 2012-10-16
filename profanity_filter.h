@@ -13,7 +13,7 @@ class profanity_filter_t
 public:
     profanity_filter_t();
     int load(const std::string& conf_path);
-    int filter( std::string& utf8str );
+    int filter( std::string& utf8str ) const;
 #ifdef _WIN32
     typedef __int64 filter_prefix_t;
 #else
